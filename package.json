@@ -1,0 +1,17 @@
+{
+  "name": "museum-of-graphics",
+  "version": "1.0.0",
+  "description": "A playable history of computer graphics",
+  "scripts": {
+    "start": "npx serve .",
+    "build:single": "node build-artifact.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "esbuild": "^0.28.2",
+    "three": "^0.169.0"
+  },
+  "private": true
+}
