@@ -1,17 +1,15 @@
 {
   "name": "museum-of-graphics",
-  "version": "1.0.0",
-  "description": "A playable history of computer graphics",
+  "version": "2.0.0",
+  "private": true,
+  "description": "A playable history of computer graphics, from one glowing dot to path tracing.",
+  "type": "module",
   "scripts": {
-    "start": "npx serve .",
-    "build:single": "node build-artifact.mjs"
+    "serve": "python3 tools/serve.py",
+    "check": "sh tools/check.sh",
+    "shot": "node tools/shot.mjs"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "esbuild": "^0.28.2",
-    "three": "^0.169.0"
-  },
-  "private": true
+  "devDependencies": {
+    "esbuild": "^0.24.0"
+  }
 }
